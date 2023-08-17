@@ -1,0 +1,65 @@
+//main:../style.less
+
+.progress-bar {
+    margin-bottom: 2.6rem;
+
+    @media @mobile-sm {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.progress-bar__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .3rem;
+
+    @media @mobile-sm {
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 1rem;
+    }
+}
+
+.progress-bar__left {
+    max-width: 95px;
+
+    @media @mobile-sm {
+        margin-bottom: .8rem;
+    }
+}
+
+.progress-bar__title {
+    font-size: 0.94rem;
+    font-weight: 300;
+
+    @media @mobile-sm {
+        font-size: 0.8rem;
+    }
+}
+
+.progress-bar__right {
+    padding-left: 0.9rem;
+
+    @media @mobile-sm {
+        padding: 0;
+    }
+}
+
+.progress-bar__bar {
+    width: 139px;
+    height: 6px;
+
+    background-color: #EFEFEF;
+
+    @media @mobile-sm {
+        width: 120px;
+    }
+}
+
+.progress-bar__progress {
+    height: 100%;
+    background-color: @gray;
+
+    transition: width 0.2s linear;
+}
