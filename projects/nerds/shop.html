@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+
+    <title>Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="index.html" class="header__logo">
+            <img
+              src="assets/images/header-logo.png"
+              alt="Neards logo"
+              class="header__img"
+            />
+          </a>
+          <nav class="nav">
+            <a href="index.html" class="nav__link nav__link--active">Студия</a>
+            <a href="#" class="nav__link">Клиенты</a>
+            <a href="shop.html" class="nav__link">Магазин</a>
+            <a href="#" class="nav__link">Контакты</a>
+            <a href="#" class="nav__link nav__link--cart"> Корзина </a>
+          </nav>
+          <button class="burger" type="button" id="navToggle">
+            <span>Открыть навигацию</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="intro intro--shop">
+      <div class="container">
+        <div class="intro__inner">
+          <h1 class="intro__title intro__title--shop">
+            Магазин готовых шаблонов
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <aside class="sidebar">
+            <div class="sidebar__price">
+              <h3 class="sidebar__title">Стоимость:</h3>
+              <div class="rangeslider">
+                <div class="rangeslider__line">
+                  <div class="rangeslider__circle rangeslider__circle--left">
+                    <div class="rangeslider__point"></div>
+                  </div>
+                  <div class="rangeslider__circle rangeslider__circle--right">
+                    <div class="rangeslider__point"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar__price-inputs">
+                <label class="sidebar__price-label">
+                  <span>От</span>
+                  <input
+                    type="number"
+                    id="input-1"
+                    class="sidebar__price-input"
+                    min="0"
+                    max="50000"
+                    placeholder="0"
+                  />
+                </label>
+                <label class="sidebar__price-label">
+                  <span>До</span>
+                  <input
+                    type="number"
+                    id="input-2"
+                    class="sidebar__price-input"
+                    min="0"
+                    max="50000"
+                    placeholder="15000"
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="sidebar__grid">
+              <h3 class="sidebar__title">Сетка:</h3>
+              <div class="sidebar__grid-item">
+                <input
+                  class="sidebar__radio"
+                  type="radio"
+                  id="gridChoice1"
+                  name="grid"
+                  value="Адаптивная"
+                  checked
+                />
+                <label for="gridChoice1">Адаптивная</label>
+              </div>
+              <div class="sidebar__grid-item">
+                <input
+                  class="sidebar__radio"
+                  type="radio"
+                  id="gridChoice2"
+                  name="grid"
+                  value="Адаптивная"
+                />
+                <label for="gridChoice2">Фиксированная</label>
+              </div>
+              <div class="sidebar__grid-item">
+                <input
+                  class="sidebar__radio"
+                  t
+                  type="radio"
+                  id="gridChoice3"
+                  name="grid"
+                  value="Адаптивная"
+                />
+                <label for="gridChoice3">Резиновая</label>
+              </div>
+            </div>
+            <div class="sidebar__options">
+              <h3 class="sidebar__title">Особенности:</h3>
+              <div class="sidebar__options-item">
+                <input
+                  class="sidebar__checkbox"
+                  type="checkbox"
+                  id="options1"
+                  checked
+                  name="options"
+                  value="Адаптивная"
+                />
+                <label for="options1">Слайдер</label>
+              </div>
+              <div class="sidebar__options-item">
+                <input
+                  class="sidebar__checkbox"
+                  type="checkbox"
+                  id="options2"
+                  name="options"
+                  value="Адаптивная"
+                />
+                <label for="options2">Блок преимуществ</label>
+              </div>
+              <div class="sidebar__options-item">
+                <input
+                  class="sidebar__checkbox"
+                  type="checkbox"
+                  id="options3"
+                  name="options"
+                  value="Адаптивная"
+                />
+                <label for="options3">Новости</label>
+              </div>
+              <div class="sidebar__options-item">
+                <input
+                  class="sidebar__checkbox"
+                  type="checkbox"
+                  id="options4"
+                  disabled
+                  name="options"
+                  value="Адаптивная"
+                />
+                <label for="options4">Галерея</label>
+              </div>
+              <div class="sidebar__options-item">
+                <input
+                  class="sidebar__checkbox"
+                  type="checkbox"
+                  id="options5"
+                  disabled
+                  checked
+                  name="options"
+                  value="Адаптивная"
+                />
+                <label for="options5">Корзина</label>
+              </div>
+            </div>
+            <a href="#" class="btn btn--gray">Показать</a>
+          </aside>
+          <div class="catalog">
+            <div class="catalog__header">
+              <div class="catalog__header-title">Сортировать:</div>
+              <div class="catalog__filter">
+                <div class="catalog__filter-item catalog__filter-item--active">
+                  По цене
+                </div>
+                <div class="catalog__filter-item">По типу</div>
+                <div class="catalog__filter-item">По названию</div>
+                <div>
+                  <img
+                    class="catalog__icon"
+                    src="assets/images/icons/icon-down-dir.svg"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__icon"
+                    src="assets/images/icons/icon-up-dir.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__item">
+                <div class="product__header">
+                  <div class="product__circles">
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                  </div>
+                </div>
+                <div class="product__img">
+                  <img
+                    src="assets/images/catalog/img-sedona.jpg"
+                    alt="sedona"
+                  />
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title"><a href="#">Sedona</a></h3>
+                  <div class="product__descr">
+                    Информационый сайт для туристов
+                  </div>
+                  <a href="#" class="btn btn--product">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__header">
+                  <div class="product__circles">
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                  </div>
+                </div>
+                <div class="product__img">
+                  <img
+                    src="assets/images/catalog/img-pink.jpg.jpg"
+                    alt="pink app"
+                  />
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title"><a href="#">Pink App</a></h3>
+                  <div class="product__descr">
+                    Продуктовый лендинг приложения для iOS и Android
+                  </div>
+                  <a href="#" class="btn btn--product">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__header">
+                  <div class="product__circles">
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                  </div>
+                </div>
+                <div class="product__img">
+                  <img
+                    src="assets/images/catalog/img-barbershop.jpg.jpg"
+                    alt="barbershop"
+                  />
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title"><a href="#">Barbershop</a></h3>
+                  <div class="product__descr">
+                    Сайт салона красоты. Для мужчин, да.
+                  </div>
+                  <a href="#" class="btn btn--product">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__header">
+                  <div class="product__circles">
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                  </div>
+                </div>
+                <div class="product__img">
+                  <img
+                    src="assets/images/catalog/img-mishka.jpg.jpg"
+                    alt="mishka"
+                  />
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title"><a href="#">MISHKA</a></h3>
+                  <div class="product__descr">
+                    Интернет-магазин вязаных игрушек
+                  </div>
+                  <a href="#" class="btn btn--product">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__header">
+                  <div class="product__circles">
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                  </div>
+                </div>
+                <div class="product__img">
+                  <img
+                    src="assets/images/catalog/img-aplus.jpg.jpg"
+                    alt="a plus"
+                  />
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title"><a href="#">A Plus</a></h3>
+                  <div class="product__descr">
+                    Лендинг курсов повышения квалификации
+                  </div>
+                  <a href="#" class="btn btn--product">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__header">
+                  <div class="product__circles">
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                    <div class="product__circles-item"></div>
+                  </div>
+                </div>
+                <div class="product__img">
+                  <img
+                    src="assets/images/catalog/img-kvast.jpg.jpg"
+                    alt="kvast"
+                  />
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title"><a href="#">КВАСТ</a></h3>
+                  <div class="product__descr">
+                    Промо-сайт производителя крафтового кваса
+                  </div>
+                  <a href="#" class="btn btn--product">9 900 руб.</a>
+                </div>
+              </div>
+            </div>
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link--active"
+                  >1</a
+                >
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link--next"
+                  >Следующая</a
+                >
+              </li>
+              <li class="pagination__item">
+                <a
+                  href="#"
+                  class="pagination__link pagination__link--next-mobile"
+                  >></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="container">
+        <div class="contacts__inner">
+          <div class="contacts__content">
+            <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
+            <address class="contacts__address">
+              <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p class="contacts__phone">тел. +7 (812) 275-75-75</p>
+            </address>
+            <a href="#" class="btn btn--address">Напишите нам</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__social">
+            <div class="social">
+              <a href="#" class="social__item" target="_blank">
+                <img
+                  class="social__icon"
+                  src="assets/images/icons/vk-icon.svg"
+                  alt="vk"
+                />
+              </a>
+              <a href="#" class="social__item" target="_blank">
+                <img
+                  class="social__icon"
+                  src="assets/images/icons/fb-icon.svg"
+                  alt="facebook"
+                />
+              </a>
+              <a href="#" class="social__item" target="_blank">
+                <img
+                  class="social__icon"
+                  src="assets/images/icons/insta-icon.svg"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer__content">
+            <h2 class="footer__title">Давайте дружить, это выгодно!</h2>
+            <div class="footer__subtitle">
+              Скидка 10% для друзей из социальных сетей.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
